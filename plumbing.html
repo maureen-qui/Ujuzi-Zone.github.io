@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plumbing Services | UjuziZone | MetalMasters</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        .logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .ujuzi {
+            color: #ff6347;
+        }
+
+        .metal {
+            color: #00aced;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .menu-icon {
+            display: none;
+        }
+
+        @media (max-width: 600px) {
+            nav ul {
+                display: none;
+            }
+            .menu-icon {
+                display: inline-block;
+            }
+            .dropdown-content.show {
+                display: block;
+            }
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .hero {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .hero h1 {
+            font-size: 36px;
+        }
+
+        .hero p {
+            font-size: 18px;
+        }
+
+        .projects, .videos {
+            margin-bottom: 40px;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .grid-item {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .grid-item img, .grid-item video {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .footer-content {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .footer-content ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-content ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        .footer-content ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <span class="ujuzi">UjuziZone</span> <span class="metal">MetalMasters</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+                <li><a href="login.html">Log In</a></li>
+                <li class="menu-icon">
+                    <a href="#" onclick="toggleMenu()">☰</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h1>Plumbing Services</h1>
+            <p>Professional and Reliable Plumbing Solutions</p>
+        </section>
+        
+        <section class="projects">
+            <h2>Our Plumbing Projects</h2>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <img src="images/plumbing-project1.jpg" alt="Plumbing Project 1">
+                    <h3>Residential Plumbing</h3>
+                    <p>Comprehensive plumbing services for residential properties.</p>
+                </div>
+                <div class="grid-item">
+                    <img src="images/plumbing-project2.jpg" alt="Plumbing Project 2">
+                    <h3>Commercial Plumbing</h3>
+                    <p>Expert plumbing solutions for commercial establishments.</p>
+                </div>
+                <div class="grid-item">
+                    <img src="images/plumbing-project3.jpg" alt="Plumbing Project 3">
+                    <h3>Emergency Plumbing</h3>
+                    <p>Quick and efficient emergency plumbing services.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="videos">
+            <h2>Plumbing Service Videos</h2>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <video controls>
+                        <source src="images/plumbing-video1.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <h3>Pipe Installation</h3>
+                    <p>Watch our professionals install pipes efficiently.</p>
+                </div>
+                <div class="grid-item">
+                    <video controls>
+                        <source src="images/plumbing-video2.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <h3>Leak Repair</h3>
+                    <p>See how we handle and repair leaks promptly.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <p>Contact us at info@metalmasterske.com</p>
+            <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Instagram</a></li>
+            </ul>
+        </div>
+    </footer>
+    <!-- JavaScript for dropdown menu -->
+    <script>
+        function toggleMenu() {
+            var dropdownContent = document.querySelector('.dropdown-content');
+            dropdownContent.classList.toggle('show');
+        }
+    </script>
+</body>
+</html>

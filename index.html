@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UjuziZone | MetalMasters</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <span class="ujuzi">UjuziZone</span> <span class="metal">MetalMasters</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Sign Up</a></li>
+                <li><a href="#">Log In</a></li>
+                <li class="menu-icon">
+                    <a href="#" onclick="toggleMenu()">☰</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h1>Connecting You with Skilled Tradespeople</h1>
+            <input type="text" placeholder="Search for services...">
+        </section>
+        
+        <!-- Services Sections -->
+        <section class="services">
+            <h2>Our Services</h2>
+            <div class="service-list">
+                <div class="service-item">
+                    <img src="images/plumbing-icon.png" alt="Plumbing">
+                    <h3>Plumbing</h3>
+                    <p>Professional plumbing services.</p>
+                    <a href="plumbing.html">
+                        <button>Learn More</button>
+                    </a>
+                </div>
+                <div class="service-item">
+                    <img src="images/welding-icon.png" alt="Welding">
+                    <h3>Welding</h3>
+                    <p>Expert welding services.</p>
+                    <a href="welding.html">
+                        <button>Learn More</button>
+                    </a>
+                </div>
+                <div class="service-item">
+                    <img src="images/carpentry-icon.png" alt="Carpentry">
+                    <h3>Carpentry</h3>
+                    <p>Skilled carpentry services.</p>
+                    <a href="service-item.html">
+                        <button>Learn More</button>
+                    </a>
+                </div>
+                <div class="service-item">
+                    <img src="images/masonry-icon.png" alt="Masonry">
+                    <h3>Masonry</h3>
+                    <p>Professional masonry services.</p>
+                    <a href="masonry.html">
+                        <button>Learn More</button>
+                    </a>
+                </div>
+                <div class="service-item">
+                    <img src="images/floristry-icon.png" alt="Floristry">
+                    <h3>Floristry</h3>
+                    <p>Beautiful floral arrangements.</p>
+                    <a href="floristry.html">
+                        <button>Learn More</button>
+                    </a>
+                </div>
+                <div class="service-item">
+                    <img src="images/interior-icon.png" alt="Interior Design">
+                    <h3>Interior Design</h3>
+                    <p>Expert interior design services.</p>
+                    <a href="interior-design.html">
+                        <button>Learn More</button>
+                    </a>
+                </div>
+                <!-- Add more service items as needed -->
+            </div>
+        </section>
+        
+        <!-- Testimonials Section -->
+        <section class="testimonials">
+            <h2>What Our Customers Say</h2>
+            <div class="testimonial-list">
+                <div class="testimonial-item">
+                    <p>"Great service!" - Jane Doe</p>
+                </div>
+                <div class="testimonial-item">
+                    <p>"Highly recommend." - John Smith</p>
+                </div>
+                <!-- Add more testimonials as needed -->
+            </div>
+        </section>
+        
+        <!-- Call to Action Section -->
+        <section class="cta">
+            <h2>Join <b>UjuziZone</b> Today!</h2>
+            <button>Sign Up</button>
+        </section>
+    </main>
+    
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <p>Contact us at info@metalmasterske.com</p>
+            <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Instagram</a></li>
+            </ul>
+        </div>
+    </footer>
+    <!-- JavaScript for dropdown menu -->
+    <script>
+        function toggleMenu() {
+            var dropdownContent = document.querySelector('.dropdown-content');
+            dropdownContent.classList.toggle('show');
+        }
+    </script>
+</body>
+</html>
